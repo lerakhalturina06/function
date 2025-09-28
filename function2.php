@@ -1,5 +1,5 @@
 <?php
-function findPerfectNumber($arr) {
+function findPerfectNumber(array $arr): array {
     $perfectNumbers = [];
     
     foreach ($arr as $number) {
@@ -19,7 +19,6 @@ function findPerfectNumber($arr) {
     
     return $perfectNumbers;
 }
-
 
 $numbers = [6, 28, 12, 496, 8, 8128, 10];
 $perfectNumbers = findPerfectNumber($numbers);

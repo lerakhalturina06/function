@@ -1,5 +1,5 @@
 <?php
-function mostRecent($text) {
+function mostRecent(string $text): string {
     $cleanedText = preg_replace('/[^\w\s]/', '', strtolower($text));
     
     $words = preg_split('/\s+/', $cleanedText, -1, PREG_SPLIT_NO_EMPTY);
@@ -21,5 +21,4 @@ function mostRecent($text) {
 
 $text = 'Hello world hello there world hello';
 echo mostRecent($text); 
-?>
 ?>
